@@ -16,15 +16,37 @@ const BurgerMenu = ({ setBurgerMenu, burgerMenu }) => {
       />
       <Ul>
         <Link to="/">
-          <Li>Home</Li>
+          <Li
+            onClick={() => {
+              setBurgerMenu(!burgerMenu);
+            }}
+          >
+            Home
+          </Li>
         </Link>
         <Link to="/gallery">
-          <Li>Gallery</Li>
+          <Li
+            onClick={() => {
+              setBurgerMenu(!burgerMenu);
+            }}
+          >
+            Gallery
+          </Li>
         </Link>
         <Link to="/art">
-          <Li>Art</Li>
+          <Li
+            onClick={() => {
+              setBurgerMenu(!burgerMenu);
+            }}
+          >
+            Art
+          </Li>
         </Link>
-        <Li>
+        <Li
+          onClick={() => {
+            setBurgerMenu(!burgerMenu);
+          }}
+        >
           <a
             href="https://www.facebook.com/theorchardbar/"
             target="_blank"
@@ -33,7 +55,11 @@ const BurgerMenu = ({ setBurgerMenu, burgerMenu }) => {
             <FbIcon />
           </a>
         </Li>
-        <Li>
+        <Li
+          onClick={() => {
+            setBurgerMenu(!burgerMenu);
+          }}
+        >
           <a
             href="https://www.instagram.com/theorchardbar/"
             target="_blank"
@@ -42,7 +68,11 @@ const BurgerMenu = ({ setBurgerMenu, burgerMenu }) => {
             <InIcon />
           </a>
         </Li>
-        <Li>
+        <Li
+          onClick={() => {
+            setBurgerMenu(!burgerMenu);
+          }}
+        >
           <a
             href="https://twitter.com/theorchardbar?lang=en"
             target="_blank"
@@ -51,7 +81,11 @@ const BurgerMenu = ({ setBurgerMenu, burgerMenu }) => {
             <TwIcon />
           </a>
         </Li>
-        <Li>
+        <Li
+          onClick={() => {
+            setBurgerMenu(!burgerMenu);
+          }}
+        >
           <a
             href="https://www.tripadvisor.co.uk/Restaurant_Review-g186525-d2102775-Reviews-The_Orchard-Edinburgh_Scotland.html"
             target="_blank"

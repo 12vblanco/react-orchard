@@ -1,24 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import BookATable from "./BookATable";
 import OurMenu from "./OurMenu";
 
-const NavMenu = () => {
-  const [ourMenu, setOurMenu] = useState(false);
-  const ourHandler = () => {
-    setOurMenu(!ourMenu);
-  };
-  const [book, setBook] = useState(false);
-  const bookHandler = () => {
-    setBook(!book);
-  };
+const NavMenu = (props) => {
   return (
     <Div>
       <Ul>
-        <Li onClick={ourHandler}>Our menus</Li>
-        <Li onClick={bookHandler}>Book a table</Li>
-        {ourMenu && <OurMenu setOurMenu={setOurMenu} ourMenu={ourMenu} />}
-        {book && <BookATable setBook={setBook} book={book} />}
+        <Li onClick={props.ourHandler}>Our menus</Li>
+        <Li onClick={props.bookHandler}>Book a table</Li>
+        {props.ourMenu && (
+          <OurMenu setOurMenu={props.setOurMenu} ourMenu={props.ourMenu} />
+        )}
+        {props.book && <BookATable setBook={props.setBook} book={props.book} />}
       </Ul>
     </Div>
   );

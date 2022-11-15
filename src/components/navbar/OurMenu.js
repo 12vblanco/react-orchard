@@ -14,8 +14,15 @@ const OurMenu = ({ setOurMenu, ourMenu }) => {
       />
       {menus.map((menu, i) => (
         <Ul>
-          <Li key={i}>
-            <a href={menu.link}>{menu.name}</a>
+          <Li
+            key={i}
+            onClick={() => {
+              setOurMenu(!ourMenu);
+            }}
+          >
+            <a href={menu.link} download={menu.name}>
+              {menu.name}
+            </a>
           </Li>
         </Ul>
       ))}

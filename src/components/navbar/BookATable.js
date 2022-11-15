@@ -1,21 +1,33 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import styled from "styled-components";
+import loading from "./loading.png";
 
 const BookATable = ({ setBook, book }) => {
   return (
     <Div>
-      <CloseIcon
-        stile={{ color: "white" }}
-        onClick={() => {
-          setBook(!book);
-        }}
-      />
-      <Iframe
-        title="book"
-        class="iframe"
-        src="https://tableagent.com/iframe/the-orchard-bar-restaurant/v/medium/"
-      ></Iframe>
+      <RowDiv>
+        <CloseText
+          onClick={() => {
+            setBook(!book);
+          }}
+        >
+          CLOSE
+        </CloseText>
+        <CloseIcon
+          stile={{ color: "white" }}
+          onClick={() => {
+            setBook(!book);
+          }}
+        />
+      </RowDiv>
+      <IframeDiv>
+        <Iframe
+          title="book"
+          class="iframe"
+          src="https://tableagent.com/iframe/the-orchard-bar-restaurant/v/medium/"
+        ></Iframe>
+      </IframeDiv>
     </Div>
   );
 };
@@ -34,6 +46,12 @@ const Div = styled.div`
   padding-right: 20px;
 `;
 
+const RowDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`;
+
 const Iframe = styled.iframe`
   height: 490px;
   border-radius: 8px;
@@ -44,6 +62,15 @@ const CloseIcon = styled(AiOutlineClose)`
   font-size: 40px;
   margin-right: 12px;
   cursor: pointer;
+`;
+
+const CloseText = styled.text`
+  font-size: 22px;
+  cursor: pointer;
+`;
+
+const IframeDiv = styled.div`
+  background: url(${loading}) center center no-repeat;
 `;
 
 export default BookATable;

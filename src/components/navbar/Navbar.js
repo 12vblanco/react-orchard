@@ -10,7 +10,21 @@ import Opening from "./Opening";
 const Navbar = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
   const burgerHandler = () => {
+    setBook(false);
+    setOurMenu(false);
     setBurgerMenu(!burgerMenu);
+  };
+  const [ourMenu, setOurMenu] = useState(false);
+  const ourHandler = () => {
+    setBurgerMenu(false);
+    setBook(false);
+    setOurMenu(!ourMenu);
+  };
+  const [book, setBook] = useState(false);
+  const bookHandler = () => {
+    setBurgerMenu(false);
+    setOurMenu(false);
+    setBook(!book);
   };
 
   // useEffect(() => {
@@ -38,9 +52,22 @@ const Navbar = () => {
           <Opening />
         </OpeningDiv>
       </Nav>
-      <NavMenu setBurgerMenu={setBurgerMenu} burgerMenu={burgerMenu} />
+      <NavMenu
+        setBurgerMenu={setBurgerMenu}
+        setBook={setBook}
+        setOurMenu={setOurMenu}
+        ourHandler={ourHandler}
+        bookHandler={bookHandler}
+        book={book}
+        ourMenu={ourMenu}
+      />
       {burgerMenu && (
-        <BurgerMenu setBurgerMenu={setBurgerMenu} burgerMenu={burgerMenu} />
+        <BurgerMenu
+          setBurgerMenu={setBurgerMenu}
+          burgerMenu={burgerMenu}
+          setBook={setBook}
+          setOurMenu={setOurMenu}
+        />
       )}
     </>
   );
