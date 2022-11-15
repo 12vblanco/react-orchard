@@ -1,13 +1,58 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  background: #8e7427;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s linear;
+}
+
+a:hover {
+  color: rgb(237, 78, 78);
+}
+
+@media only screen and (min-width: 2200px) {
+  html,
+  body {
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width: 1018px) {
+  html,
+  body {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 920px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 356px) {
+  html,
+  body {
+    font-size: 34%;
+  }
+}
+/* @media only screen and (max-width: 360px) {
+  html,
+  body {
+    font-size: 24%;
+  }
+} */
