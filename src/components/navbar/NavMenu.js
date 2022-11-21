@@ -42,7 +42,7 @@ const Li = styled.li`
   margin: 0 3.2rem;
   text-transform: uppercase;
   cursor: pointer;
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 0rem;
 `;
 
 export default NavMenu;
