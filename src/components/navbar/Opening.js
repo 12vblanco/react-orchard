@@ -1,6 +1,5 @@
 import React from "react";
 import { FiClock, FiMapPin, FiPhoneCall } from "react-icons/fi";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Opening = () => {
@@ -8,17 +7,24 @@ const Opening = () => {
     <ColumnDiv>
       <RowDiv>
         <Text>We are open!</Text>
-        <OpeningHours>
-          <NavLink to={"/home#opening"}>
-            <Text>Our opening hours</Text>
-          </NavLink>
+        <OpeningHours
+          onClick={() => {
+            window.scrollTo(0, 3000);
+          }}
+        >
+          <Text>Our opening hours</Text>
           <ClockIcon />
         </OpeningHours>
       </RowDiv>
       <FindDiv>
-        <Text>Where to find us</Text>
+        <a
+          href="https://www.google.com/maps/place/The+Orchard+Bar+%26+Restaurant/@55.963387,-3.200662,15z/data=!4m5!3m4!1s0x0:0x92b0909954f76e4!8m2!3d55.963387!4d-3.200662"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Text>Get directions</Text>
+        </a>
         <MapIcon />
-
         <TextPhone>
           <a href="tel:0131 550 0850">0131 550 0850</a>
         </TextPhone>
@@ -73,9 +79,9 @@ const OpeningHours = styled.div`
   cursor: pointer;
   margin-left: 32px;
   transition: all 0.3s linear;
-  &:hover {
+  /* &:hover {
     color: #ed4e4e;
-  }
+  } */
 `;
 const FindDiv = styled.div`
   display: flex;

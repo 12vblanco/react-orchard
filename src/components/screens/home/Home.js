@@ -24,8 +24,6 @@ const ImgDiv = styled.div`
 
 const Img = styled.img`
   width: 100%;
-  min-height: 550px;
-  min-width: 1100px;
   z-index: -1;
 `;
 

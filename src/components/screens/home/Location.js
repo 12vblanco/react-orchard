@@ -90,7 +90,7 @@ const Row = styled.div`
   margin: 1rem 0;
 `;
 
-const Text = styled.p`
+const Text = styled.div`
   font-size: 20px;
   font-weight: 600;
   width: 42rem;
