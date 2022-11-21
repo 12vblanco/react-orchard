@@ -19,9 +19,16 @@ const Art = () => {
             <br />
             If you would like to hold an exhibition at The Orchard please email
             <br />
-            Lorraine at{" "}
+            Lorraine{" "}
             <span style={{ color: "#ed4e4e" }}>
-              theorchardbar@gmail.com
+              <a
+                href="mailto:theorchardbarAhTgmailDhOTcom"
+                onclick="this.href=this.href
+              .replace(/AhT/,'&#64;')
+              .replace(/DhOT/,'&#46;')"
+              >
+                here
+              </a>
             </span>{" "}
             with your details.
           </H2>
