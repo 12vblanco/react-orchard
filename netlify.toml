@@ -1,0 +1,6 @@
+ from= "/art"
+  to = "/index.html"
+  status= 200
+ from= "/gallery"
+  to = "/index.html"
+  status= 200
