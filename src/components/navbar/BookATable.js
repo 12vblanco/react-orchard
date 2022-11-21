@@ -41,7 +41,7 @@ const Div = styled.div`
   height: 580px;
   padding-top: 1rem;
   padding-bottom: 3rem;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.94);
   border-radius: 0 0px 8px 0;
   padding-right: 20px;
 `;

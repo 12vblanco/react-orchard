@@ -108,7 +108,7 @@ const Div = styled.div`
   height: auto;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.94);
   border-radius: 0 0px 8px 0;
 `;
 const Ul = styled.ul`

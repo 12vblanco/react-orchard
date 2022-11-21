@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FiClock, FiMapPin, FiPhoneCall } from "react-icons/fi";
 import styled from "styled-components";
 
 const Opening = () => {
+  const [opened, setOpened] = useState("");
+
+  useEffect(() => {
+    let d = new Date();
+    let n = d.getDay();
+    let now = d.getHours() + "." + d.getMinutes();
+    let weekdays = [
+      ["Sunday", 12.0, 23.0],
+      ["Monday", 12.0, 23.0],
+      ["Tuesday", 12.0, 23.0],
+      ["Wednesday", 12.0, 23.0],
+      ["Thursday", 12.0, 23.0],
+      ["Friday", 12.0, 23.0],
+      ["Saturday", 12.0, 23.0],
+    ];
+    let day = weekdays[n];
+    if ((now > day[1] && now < day[2]) || (now > day[3] && now < day[4])) {
+      setOpened("We are open now!");
+    } else {
+      setOpened("Sorry, we are closed");
+    }
+  }, []);
+
   return (
     <ColumnDiv>
       <RowDiv>
-        <Text>We are open!</Text>
+        <Text>{opened}</Text>
         <OpeningHours
           onClick={() => {
             window.scrollTo(0, 3000);
