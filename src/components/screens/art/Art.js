@@ -15,7 +15,7 @@ const Art = () => {
             supporting local artists and art students to showcase their work.
             <br />
             Since we are close to the Botanical Gardens in Edinburgh we
-            encourage natural art, Edinburgh cityscapes, & photography. <br />{" "}
+            encourage natural art, Edinburgh city-scapes, & photography. <br />{" "}
             <br />
             If you would like to hold an exhibition at The Orchard please email
             <br />
@@ -78,6 +78,9 @@ const Div = styled.div`
   justify-content: center;
   padding: 22px 0;
   background: rgba(0, 0, 0, 0.96);
+  @media (max-width: 700px) {
+    padding: 1rem;
+  }
 `;
 
 const Header = styled.div`
@@ -85,7 +88,8 @@ const Header = styled.div`
   max-width: 1200px;
   padding: 22px;
   margin-bottom: 42px;
-  @media (max-width: 668px) {
+  @media (max-width: 700px) {
+    padding: 1rem;
     flex-direction: column;
     margin: 6px;
   }
@@ -93,6 +97,8 @@ const Header = styled.div`
 const TextDiv = styled.div`
   max-width: 340px;
   margin-left: 22px;
+  text-align: justify;
+  text-justify: inter-word;
   @media (max-width: 668px) {
     margin: 6px;
   }
@@ -108,6 +114,8 @@ const H1 = styled.h1`
 const H2 = styled.p`
   font-size: 15px;
   line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
 `;
 
 export default Art;

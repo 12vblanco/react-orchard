@@ -20,6 +20,9 @@ const Div = styled.div`
   justify-content: center;
   padding: 22px 0;
   background: rgba(0, 0, 0, 0.96);
+  @media (max-width: 700px) {
+    padding: 1rem;
+  }
 `;
 
 export default Gallery;

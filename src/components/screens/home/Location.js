@@ -127,8 +127,13 @@ const ListText = styled.p`
   font-weight: 400;
   width: 54rem;
   margin-left: 12px;
+  text-align: justify;
+  text-justify: inter-word;
   & a {
     color: #ed4e4e;
+  }
+  @media (max-width: 700px) {
+    margin: 1rem;
   }
   @media (max-width: 420px) {
     width: 100%;
