@@ -68,6 +68,7 @@ const Div = styled.div`
   padding: 4rem 0;
   @media (max-width: 700px) {
     flex-direction: column;
+    padding: 0px;
   }
 `;
 const DivList = styled.div`
@@ -98,6 +99,8 @@ const Text = styled.div`
   @media (max-width: 700px) {
     font-size: 19px;
     font-weight: 500;
+    padding: 12px;
+    text-align: center;
   }
   @media (max-width: 420px) {
     margin: 1rem 0;
@@ -111,8 +114,10 @@ const Img = styled.img`
   border-radius: 8px;
   margin: 0 0 0 4rem;
   @media (max-width: 700px) {
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
     height: auto;
+    margin-left: 0;
     margin-top: 3rem;
   }
 `;

@@ -9,7 +9,7 @@ const FoodDrink = () => {
       <Div>
         <TextLeft>
           The Orchard Bar is an informal, relaxed bar and restaurant situated in
-          Canonmills only a few minutes walk from the botanic gardens. With a
+          Canonmills only a few minutes walk from the Botanic Gardens. With a
           regularly changing and varied menu using locally sourced seasonal
           produce the orchard provides excellent classic meals with a modern
           touch. Whether it is one of our pub favourites such as Haddock & Chips
@@ -48,6 +48,9 @@ const DivColumn = styled.div`
   background: rgba(0, 0, 0, 0.96);
   height: auto;
   padding: 5rem 0;
+  @media (max-width: 700px) {
+    padding: 1rem;
+  }
 `;
 const Div = styled.div`
   display: flex;
@@ -75,6 +78,8 @@ const TextLeft = styled.p`
   width: 42rem;
   line-height: 1.6;
   margin-right: 8rem;
+  text-align: justify;
+  text-justify: inter-word;
   @media (max-width: 700px) {
     width: 80%;
     margin-right: 0rem;
@@ -93,6 +98,9 @@ const TextRight = styled.p`
   width: 42rem;
   line-height: 1.6;
   margin-left: 8rem;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.6;
   @media (max-width: 700px) {
     width: 80%;
     margin-bottom: 3rem;

@@ -27,18 +27,6 @@ const Navbar = () => {
     setBook(!book);
   };
 
-  // useEffect(() => {
-  //   const closeMenu = (e) => {
-  //     console.log(e);
-
-  //     if (e.path[0].tagName !== "svg") {
-  //       burgerMenu(false);
-  //     }
-  //   };
-  //   document.body.addEventListener("click", closeMenu);
-  //   return () => document.body.removeEventListener("click", closeMenu);
-  // });
-
   return (
     <>
       <Nav>
@@ -105,6 +93,7 @@ const LogoDiv = styled.div`
   }
   @media (max-width: 824px) {
     margin-left: 0;
+    margin-top: 6px;
   }
 `;
 
