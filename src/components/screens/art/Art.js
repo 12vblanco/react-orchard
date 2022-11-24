@@ -18,7 +18,6 @@ const Art = () => {
             encourage natural art, Edinburgh city-scapes, & photography. <br />{" "}
             <br />
             If you would like to hold an exhibition at The Orchard please email
-            <br />
             Lorraine{" "}
             <span style={{ color: "#ed4e4e" }}>
               <a
@@ -97,8 +96,7 @@ const Header = styled.div`
 const TextDiv = styled.div`
   max-width: 340px;
   margin-left: 22px;
-  text-align: justify;
-  text-justify: inter-word;
+
   @media (max-width: 668px) {
     margin: 6px;
   }
@@ -113,7 +111,7 @@ const H1 = styled.h1`
 `;
 const H2 = styled.p`
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: justify;
   text-justify: inter-word;
 `;
