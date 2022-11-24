@@ -90,7 +90,7 @@ const TextLeft = styled.p`
   }
 
   &:first-letter {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
   }
 `;
 const TextRight = styled.p`
@@ -111,7 +111,7 @@ const TextRight = styled.p`
   }
 
   &:first-letter {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
   }
 `;
 
