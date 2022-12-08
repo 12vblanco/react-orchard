@@ -40,12 +40,12 @@ const Div = styled.div`
 const DivRow = styled.div`
   display: flex;
   font-size: 32px;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 `;
 
 const ContactText = styled.div`
   text-align: center;
-  font-size: 16px;
+  font-size: 17px;
 `;
 const ContactTelf = styled.div`
   text-align: center;
@@ -56,11 +56,11 @@ const ContactTelf = styled.div`
 const CopyText = styled.div`
   text-align: center;
   font-size: 11px;
-  margin-top: 4rem;
+  margin-top: 6rem;
 `;
 
 const Img = styled.img`
-  width: 18rem;
+  width: 20rem;
 `;
 
 export default FooterContact;

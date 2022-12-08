@@ -37,7 +37,7 @@ const Ul = styled.ul`
 const Li = styled.li`
   width: 18rem;
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 20px;
   font-weight: 500;
   margin: 0 3.2rem;
   text-transform: uppercase;

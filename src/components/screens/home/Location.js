@@ -92,7 +92,7 @@ const Row = styled.div`
 `;
 
 const Text = styled.div`
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   width: 42rem;
 
@@ -123,7 +123,7 @@ const Img = styled.img`
 `;
 const ListText = styled.p`
   font-style: italic;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
   width: 54rem;
   margin-left: 12px;

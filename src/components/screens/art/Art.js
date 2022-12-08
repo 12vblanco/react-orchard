@@ -84,6 +84,8 @@ const Div = styled.div`
 
 const Header = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 1200px;
   padding: 22px;
   margin-bottom: 42px;
@@ -102,16 +104,17 @@ const TextDiv = styled.div`
   }
 `;
 const Img = styled.img`
-  width: 340px;
-  height: 340px;
+  width: 36rem;
+  height: 36rem;
+  border-radius: 6px;
 `;
 
 const H1 = styled.h1`
   font-size: 28px;
 `;
 const H2 = styled.p`
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 19px;
+  line-height: 1.5;
   text-align: justify;
   text-justify: inter-word;
 `;

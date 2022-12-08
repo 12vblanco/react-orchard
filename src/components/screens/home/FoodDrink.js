@@ -8,33 +8,36 @@ const FoodDrink = () => {
     <DivColumn>
       <Div>
         <TextLeft>
-          The Orchard Bar is an informal, relaxed bar and restaurant situated in
-          Canonmills only a few minutes walk from the Botanic Gardens. With a
-          regularly changing and varied menu using locally sourced seasonal
-          produce the orchard provides excellent classic meals with a modern
-          touch. Whether it is one of our pub favourites such as Haddock & Chips
-          or our legendary Steak Pies and Burgers to the more refined Fillet of
-          Cod or Lamb rump dishes there is something for every palate. The
-          Orchard also has vegetarian and vegan options as well as a gluten free
-          and children`s menu available. Please ask us if you need to see our
-          gluten free menu or have any dietary requirements.
+          The Orchard Bar is a casual, relaxed restaurant and bar located in
+          Canonmills just a few minutes' walk from the botanic gardens.
+          <br /> We offer a regularly changing menu with seasonal produce,
+          providing classic meals with a modern twist. Our pub favorites include
+          Haddock & Chips and our famous Steak Pies and Burgers, as well as more
+          refined dishes like Fillet of Cod and Lamb rump. We also have
+          vegetarian and vegan options, as well as a gluten free and children's
+          menu.
+          <br />
+          <br /> Please let us know if you need to see our gluten free menu or
+          have any dietary requirements.
         </TextLeft>
         <Img src={food1} />
       </Div>
       <DivRight>
         <Img src={drinks1} />
         <TextRight>
-          We have a wide range of drinks here at the Orchard. Beers, Wines,
-          Gins, Whiskies, Rums, soft drinks and hot drinks. We have Ales like
-          Deuchars on the pumps plus guest ales that change regularly. We also
-          have a selection of single cask whiskies supplied by Cadenheads which
-          are independently bottled in Campbeltown, for that extra special
-          treat. Why not try our Highland Park 30 year old cask strength whisky
-          for example or our 8 year old Springbank Sherry cask. Cadenheads also
-          supply us with our unique cask strength sipping rums. From the
-          FourSquare distillery in Barbados we have an 11 year old and a 12 year
-          old to try, and rums from Belize, Jamaica and Trinidad. Plus old
-          favourites like Havana club from Cuba to Diplomatico from Venezuela.
+          We offer a wide range of drinks at the Orchard, including beers,
+          wines, gins, whiskies, rums, soft drinks, and hot drinks. We have Ales
+          like Deuchars on tap, plus rotating guest ales.
+          <br />
+          We also have a selection of single cask whiskies from Cadenheads,
+          independently bottled in Campbeltown. Try our Highland Park 30 year
+          old cask strength whisky or our 8 year old Springbank Sherry cask.
+          <br />
+          Cadenheads also supplies our unique cask strength sipping rums. From
+          the FourSquare distillery in Barbados, we have an 11 year old and a 12
+          year old. We also have rums from Belize, Jamaica, and Trinidad, plus
+          old favorites like Havana Club and Diplomatico. Come and enjoy the
+          finest spirits at the Orchard.
         </TextRight>
       </DivRight>
     </DivColumn>
@@ -74,7 +77,7 @@ const DivRight = styled.div`
 `;
 
 const TextLeft = styled.p`
-  font-size: 15px;
+  font-size: 19px;
   width: 42rem;
   line-height: 1.6;
   margin-right: 8rem;
@@ -94,7 +97,7 @@ const TextLeft = styled.p`
   }
 `;
 const TextRight = styled.p`
-  font-size: 15px;
+  font-size: 19px;
   width: 42rem;
   line-height: 1.6;
   margin-left: 8rem;
@@ -116,8 +119,8 @@ const TextRight = styled.p`
 `;
 
 const Img = styled.img`
-  width: 30rem;
-  height: 30rem;
+  width: 36rem;
+  height: 36rem;
   border-radius: 8px;
   @media (max-width: 700px) {
     width: 60%;

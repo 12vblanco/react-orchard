@@ -59,13 +59,13 @@ const Iframe = styled.iframe`
 
 const CloseIcon = styled(AiOutlineClose)`
   color: white;
-  font-size: 40px;
+  font-size: 36px;
   margin-right: 12px;
   cursor: pointer;
 `;
 
 const CloseText = styled.text`
-  font-size: 22px;
+  font-size: 18px;
   cursor: pointer;
 `;
 

@@ -50,7 +50,7 @@ const Ul = styled.ul`
   list-style: none;
 `;
 const Li = styled.li`
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 700;
   margin: 1.4rem;
 `;
