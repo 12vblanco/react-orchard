@@ -1,10 +1,12 @@
 import React from "react";
+import ReactDOM from "react-dom";
+
 import { AiOutlineClose } from "react-icons/ai";
 import styled from "styled-components";
 import loading from "./loading.png";
 
 const BookATable = ({ setBook, book }) => {
-  return (
+  return ReactDOM.createPortal(
     <Div>
       <RowDiv>
         <CloseText
@@ -28,7 +30,8 @@ const BookATable = ({ setBook, book }) => {
           src="https://tableagent.com/iframe/the-orchard-bar-restaurant/v/medium/"
         ></Iframe>
       </IframeDiv>
-    </Div>
+    </Div>,
+    document.getElementById("burger")
   );
 };
 

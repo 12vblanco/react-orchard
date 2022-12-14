@@ -1,10 +1,11 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { AiOutlineClose } from "react-icons/ai";
 import styled from "styled-components";
 import { menus } from "./Menus";
 
 const OurMenu = ({ setOurMenu, ourMenu }) => {
-  return (
+  return ReactDOM.createPortal(
     <Div>
       <CloseIcon
         stile={{ color: "white" }}
@@ -26,7 +27,8 @@ const OurMenu = ({ setOurMenu, ourMenu }) => {
           </Li>
         </Ul>
       ))}
-    </Div>
+    </Div>,
+    document.getElementById("burger")
   );
 };
 
