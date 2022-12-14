@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import prev1 from "../../../components/screens/art/prev1.jpg";
 import art from "../../../images/art/art.jpeg";
 import Image from "./Image";
 
@@ -35,34 +36,60 @@ const Art = () => {
       </Header>
       <H1>Current Exhibition:</H1>{" "}
       <H2 style={{ fontSize: "18px" }}>
-        Darren Ashcroft{" "}
+        Karen Laird{" "}
         <a
-          href="https://www.ashcroftfineart.com/"
+          href="https://www.instagram.com/karenlaird.art/"
           target="_blank"
           rel="noreferrer"
         >
-          (link to website)
+          (link to Instagram)
         </a>
       </H2>
       <Image />
       <H2 style={{ maxWidth: "1000px", padding: "22px" }}>
-        I paint from my home on the Wirral which when you consider the subject
-        of the vast majority of my work seems a bit confusing. However, I love
-        Edinburgh and being a regular visitor to the city, I get the opportunity
-        to complete studies and preliminary sketches in situ which I turn into
-        finished works at home. When these run out, I resort to using quality
-        shots from the many talented photographers operating in the city. <br />
-        I was initially drawn to the architectural style of the Old Town;
-        producing illustrative pictures, in gouache, of the notable buildings in
-        the area. Recently I’ve ventured out and, taking inspiration from the
-        Georgian architecture of the New Town, adopted a freer approach
-        utilising collage, paint, pen, crayon and pencil.
-        <br /> I’m thoroughly enjoying this new process and artistic
-        experimentation is now becoming the ‘norm’. I hope you like what you see
-        and please feel free to contact me if you require any additional
-        information. <br />
-        <span style={{ color: "#ed4e4e" }}>Darren </span>{" "}
+        Karen Laird is a Scottish landscape artist. She grew up in Orkney, is
+        currently living in Edinburgh, and spends her time painting between both
+        places. <br />
+        Karen studied glass at Edinburgh College of Art gaining her BA(hons) in
+        design and applied arts, before studying painting at Leith School of
+        Art, where she was awarded the painting course prize.
+        <br />
+        Her painting has been featured in numerous juried exhibitions, including
+        the Jacksons Painting Prize, and the Lynn Painter-Stainers Prize at the
+        Mall galleries in London.
+        <br /> Beginning with a love of being outside in the landscape, these
+        works were created in response to walks taken around Edinburgh in wooded
+        areas during the Lockdown period. Karen makes paintings that portray
+        what she enjoys about the natural world. Be it the patterns created by a
+        tangle of branches, the glimpse of buildings peeping through between the
+        gaps in the trees, or the sun dappling the leaves rustling in the wind.
+        Working with acrylic, layering up the paint, her pictures are a
+        collection of arks which capture nature in a joyful and colourful way.
+        <br />
+        <span style={{ color: "#ed4e4e" }}>Karen Laird </span>{" "}
       </H2>
+      <H1 style={{ marginTop: "6rem" }}>Previous Exhibitions:</H1>
+      <PrevDiv>
+        <PrevImg src={prev1} />
+        <div>
+          <H2>
+            <a
+              href="https://victorblanco.co.uk"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Victor Blanco
+            </a>{" "}
+          </H2>
+          <H2>
+            Handmade printing of tree rings; The rings, which are formed as the
+            tree grows over time, provide a detailed and intricate pattern. The
+            resulting prints are a beautiful and unique way to celebrate the
+            natural world and the passage of time, and can make a wonderful
+            addition to any home or office.
+          </H2>
+        </div>
+      </PrevDiv>
     </Div>
   );
 };
@@ -95,8 +122,17 @@ const Header = styled.div`
     margin: 6px;
   }
 `;
+
+const PrevDiv = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 2rem 8rem;
+  justify-content: center;
+  align-items: center;
+`;
+
 const TextDiv = styled.div`
-  max-width: 340px;
+  max-width: 460px;
   margin-left: 22px;
 
   @media (max-width: 668px) {
@@ -105,8 +141,14 @@ const TextDiv = styled.div`
 `;
 const Img = styled.img`
   width: 36rem;
-  height: 36rem;
+  height: auto;
   border-radius: 6px;
+`;
+const PrevImg = styled.img`
+  width: 14rem;
+  height: auto;
+  border-radius: 6px;
+  margin-right: 6rem;
 `;
 
 const H1 = styled.h1`

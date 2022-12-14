@@ -120,7 +120,7 @@ const TextRight = styled.p`
 
 const Img = styled.img`
   width: 36rem;
-  height: 36rem;
+  height: auto;
   border-radius: 8px;
   @media (max-width: 700px) {
     width: 60%;

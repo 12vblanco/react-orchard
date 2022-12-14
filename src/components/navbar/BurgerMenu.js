@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaTripadvisor } from "react-icons/fa";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
@@ -6,7 +7,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const BurgerMenu = ({ setBurgerMenu, burgerMenu }) => {
-  return (
+  return ReactDOM.createPortal(
     <Div>
       <CloseIcon
         stile={{ color: "white" }}
@@ -95,7 +96,8 @@ const BurgerMenu = ({ setBurgerMenu, burgerMenu }) => {
           </a>
         </Li>
       </Ul>
-    </Div>
+    </Div>,
+    document.getElementById("burger")
   );
 };
 

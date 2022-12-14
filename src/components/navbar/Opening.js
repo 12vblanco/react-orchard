@@ -5,11 +5,11 @@ import styled from "styled-components";
 const Opening = () => {
   const [opened, setOpened] = useState("");
 
-  useEffect(() => {
-    let d = new Date();
-    let n = d.getDay();
-    let now = d.getHours() + "." + d.getMinutes();
-    let weekdays = [
+  function checkStoreStatus() {
+    const d = new Date();
+    const n = d.getDay();
+    const now = d.getHours() + "." + d.getMinutes();
+    const weekdays = [
       ["Sunday", 12.0, 23.0],
       ["Monday", 12.0, 23.0],
       ["Tuesday", 12.0, 23.0],
@@ -18,12 +18,20 @@ const Opening = () => {
       ["Friday", 12.0, 23.0],
       ["Saturday", 12.0, 23.0],
     ];
-    let day = weekdays[n];
+    const day = weekdays[n];
     if ((now > day[1] && now < day[2]) || (now > day[3] && now < day[4])) {
       setOpened("We are open now!");
     } else {
       setOpened("Sorry, we are closed");
     }
+  }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      checkStoreStatus();
+    }, 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
