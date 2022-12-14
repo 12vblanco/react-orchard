@@ -4,8 +4,18 @@ import { AiOutlineClose } from "react-icons/ai";
 import styled from "styled-components";
 import { menus } from "./Menus";
 
-const OurMenu = ({ setOurMenu, ourMenu }) => {
-  return ReactDOM.createPortal(
+const Backdrop = ({ setOurMenu, ourMenu }) => {
+  return (
+    <BackdropDiv
+      onClick={() => {
+        setOurMenu(!ourMenu);
+      }}
+    />
+  );
+};
+
+const BurgerOverlay = ({ setOurMenu, ourMenu }) => {
+  return (
     <Div>
       <CloseIcon
         stile={{ color: "white" }}
@@ -27,8 +37,23 @@ const OurMenu = ({ setOurMenu, ourMenu }) => {
           </Li>
         </Ul>
       ))}
-    </Div>,
-    document.getElementById("burger")
+    </Div>
+  );
+};
+const portalElement = document.getElementById("burger");
+
+const OurMenu = ({ setOurMenu, ourMenu }) => {
+  return (
+    <>
+      {ReactDOM.createPortal(
+        <Backdrop setOurMenu={setOurMenu} ourMenu={ourMenu} />,
+        portalElement
+      )}
+      {ReactDOM.createPortal(
+        <BurgerOverlay setOurMenu={setOurMenu} ourMenu={ourMenu} />,
+        portalElement
+      )}
+    </>
   );
 };
 
@@ -62,6 +87,16 @@ const CloseIcon = styled(AiOutlineClose)`
   font-size: 40px;
   margin-right: 12px;
   cursor: pointer;
+`;
+
+const BackdropDiv = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
 `;
 
 export default OurMenu;

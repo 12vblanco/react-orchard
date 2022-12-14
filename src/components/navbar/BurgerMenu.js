@@ -6,8 +6,18 @@ import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const BurgerMenu = ({ setBurgerMenu, burgerMenu }) => {
-  return ReactDOM.createPortal(
+const Backdrop = ({ setBurgerMenu, burgerMenu }) => {
+  return (
+    <BackdropDiv
+      onClick={() => {
+        setBurgerMenu(!burgerMenu);
+      }}
+    />
+  );
+};
+
+const BurgerOverlay = ({ setBurgerMenu, burgerMenu }) => {
+  return (
     <Div>
       <CloseIcon
         stile={{ color: "white" }}
@@ -96,8 +106,24 @@ const BurgerMenu = ({ setBurgerMenu, burgerMenu }) => {
           </a>
         </Li>
       </Ul>
-    </Div>,
-    document.getElementById("burger")
+    </Div>
+  );
+};
+
+const portalElement = document.getElementById("burger");
+
+const BurgerMenu = ({ setBurgerMenu, burgerMenu }) => {
+  return (
+    <>
+      {ReactDOM.createPortal(
+        <Backdrop setBurgerMenu={setBurgerMenu} burgerMenu={burgerMenu} />,
+        portalElement
+      )}
+      {ReactDOM.createPortal(
+        <BurgerOverlay setBurgerMenu={setBurgerMenu} burgerMenu={burgerMenu} />,
+        portalElement
+      )}
+    </>
   );
 };
 
@@ -112,6 +138,7 @@ const Div = styled.div`
   padding-bottom: 2rem;
   background: rgba(0, 0, 0, 0.94);
   border-radius: 0 0px 8px 0;
+  z-index: 2;
 `;
 const Ul = styled.ul`
   display: flex;
@@ -144,6 +171,16 @@ const TwIcon = styled(FiTwitter)`
 `;
 const TrIcon = styled(FaTripadvisor)`
   font-size: 28px;
+`;
+
+const BackdropDiv = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
 `;
 
 export default BurgerMenu;
