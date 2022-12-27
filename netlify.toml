@@ -1,11 +1,6 @@
 [[redirects]]
  
- from= "/art"
-  to = "/index.html"
+ from= "/*"
+  to = "/:splat"
   status= 200
 
-  [[redirects]]
-
- from= "/gallery"
-  to = "/index.html"
-  status= 200
