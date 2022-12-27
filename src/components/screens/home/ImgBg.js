@@ -9,26 +9,23 @@ import img5 from "../../../images/home/home5.jpg";
 import img7 from "../../../images/home/home7.jpg";
 
 export default function ImgBg() {
-  const [photo, setPhoto] = useState(1);
+  const [photo, setPhoto] = useState(null);
 
   useEffect(() => {
+    // generate a random number between 1 and 5 inclusive
+    const randomPhoto = Math.floor(Math.random() * 5) + 1;
+    setPhoto(randomPhoto);
+
     const interval = setInterval(() => {
-      change();
-    }, 14000);
+      // increment the photo index, or set it back to 1 if it reaches the end
+      const newPhoto = photo === 5 ? 1 : photo + 1;
+      setPhoto(newPhoto);
+    }, 9000); // interval duration in milliseconds
 
     return () => {
       clearInterval(interval);
     };
   }, [photo]);
-
-  const change = () => {
-    if (photo === 5) {
-      setPhoto(1);
-      return;
-    }
-
-    setPhoto((prev) => prev + 1);
-  };
 
   const returnPhotoURL = () => {
     switch (photo) {
@@ -46,7 +43,6 @@ export default function ImgBg() {
         return img0;
     }
   };
-  console.log(photo, returnPhotoURL(), "this");
 
   return (
     <div>
