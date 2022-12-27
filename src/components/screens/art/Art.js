@@ -129,6 +129,10 @@ const PrevDiv = styled.div`
   padding: 2rem 8rem;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 `;
 
 const TextDiv = styled.div`
@@ -143,22 +147,45 @@ const Img = styled.img`
   width: 36rem;
   height: auto;
   border-radius: 6px;
+  @media (max-width: 640px) {
+    width: 100vw;
+    margin-right: 0;
+    padding: 2rem;
+  }
 `;
 const PrevImg = styled.img`
   width: 14rem;
   height: auto;
   border-radius: 6px;
   margin-right: 6rem;
+
+  @media (max-width: 640px) {
+    width: 100vw;
+    margin-right: 0;
+    padding: 2rem;
+  }
 `;
 
 const H1 = styled.h1`
   font-size: 28px;
+
+  @media (max-width: 640px) {
+    width: 100vw;
+    margin-right: 0;
+    padding: 2rem;
+  }
 `;
 const H2 = styled.p`
   font-size: 19px;
   line-height: 1.5;
   text-align: justify;
   text-justify: inter-word;
+
+  @media (max-width: 640px) {
+    width: 100vw;
+    margin-right: 0;
+    padding: 2rem;
+  }
 `;
 
 export default Art;

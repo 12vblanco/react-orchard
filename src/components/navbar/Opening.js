@@ -88,6 +88,9 @@ const TextPhone = styled.p`
   font-size: 2.1rem;
   color: #ed4e4e;
   margin: 9px 6px 0px 28px;
+  @media (max-width: 824px) {
+    margin: 9px 6px 0px 62px;
+  }
 `;
 const ClockIcon = styled(FiClock)`
   font-size: 2.2rem;

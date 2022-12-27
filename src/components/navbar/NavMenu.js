@@ -43,6 +43,10 @@ const Li = styled.li`
   text-transform: uppercase;
   cursor: pointer;
   padding: 0.6rem 0rem;
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+  }
 `;
 
 export default NavMenu;

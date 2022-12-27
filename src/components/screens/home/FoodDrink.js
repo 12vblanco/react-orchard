@@ -62,7 +62,7 @@ const Div = styled.div`
   padding: 3rem 0;
   @media (max-width: 700px) {
     flex-direction: column;
-    padding: 0 3rem;
+    padding: 0 1rem;
   }
 `;
 const DivRight = styled.div`
@@ -72,7 +72,7 @@ const DivRight = styled.div`
   padding: 3rem 0;
   @media (max-width: 700px) {
     flex-direction: column-reverse;
-    padding: 0 3rem;
+    padding: 0 1rem;
   }
 `;
 
@@ -84,7 +84,7 @@ const TextLeft = styled.p`
   text-align: justify;
   text-justify: inter-word;
   @media (max-width: 700px) {
-    width: 80%;
+    width: 90%;
     margin-right: 0rem;
     margin-bottom: 3rem;
   }
@@ -105,7 +105,7 @@ const TextRight = styled.p`
   text-justify: inter-word;
   line-height: 1.6;
   @media (max-width: 700px) {
-    width: 80%;
+    width: 90%;
     margin-bottom: 3rem;
     margin-left: 0rem;
   }
