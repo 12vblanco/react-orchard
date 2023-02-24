@@ -4,17 +4,17 @@ import { AiOutlineClose } from "react-icons/ai";
 import styled from "styled-components";
 import { menus } from "./Menus";
 
-const Backdrop = ({ setOurMenu, ourMenu }) => {
-  return (
-    <BackdropDiv
-      onClick={() => {
-        setOurMenu(!ourMenu);
-      }}
-    />
-  );
-};
+// const Backdrop = ({ setOurMenu, ourMenu }) => {
+//   return (
+//     <BackdropDiv
+//       onClick={() => {
+//         setOurMenu(!ourMenu);
+//       }}
+//     />
+//   );
+// };
 
-const BurgerOverlay = ({ setOurMenu, ourMenu }) => {
+const OurMenuOverlay = ({ setOurMenu, ourMenu }) => {
   return (
     <Div>
       <CloseIcon
@@ -45,12 +45,12 @@ const portalElement = document.getElementById("burger");
 const OurMenu = ({ setOurMenu, ourMenu }) => {
   return (
     <>
-      {ReactDOM.createPortal(
+      {/* {ReactDOM.createPortal(
         <Backdrop setOurMenu={setOurMenu} ourMenu={ourMenu} />,
         portalElement
-      )}
+      )} */}
       {ReactDOM.createPortal(
-        <BurgerOverlay setOurMenu={setOurMenu} ourMenu={ourMenu} />,
+        <OurMenuOverlay setOurMenu={setOurMenu} ourMenu={ourMenu} />,
         portalElement
       )}
     </>
