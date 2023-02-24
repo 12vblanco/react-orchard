@@ -89,14 +89,14 @@ const CloseIcon = styled(AiOutlineClose)`
   cursor: pointer;
 `;
 
-const BackdropDiv = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0);
-`;
+// const BackdropDiv = styled.div`
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100vh;
+//   z-index: 1;
+//   background-color: rgba(0, 0, 0, 0);
+// `;
 
 export default OurMenu;
