@@ -14,33 +14,33 @@ import { menus } from "./Menus";
 //   );
 // };
 
-const OurMenuOverlay = ({ setOurMenu, ourMenu }) => {
-  return (
-    <Div>
-      <CloseIcon
-        stile={{ color: "white" }}
-        onClick={() => {
-          setOurMenu(!ourMenu);
-        }}
-      />
-      {menus.map((menu, i) => (
-        <Ul>
-          <Li
-            key={i}
-            onClick={() => {
-              setOurMenu(!ourMenu);
-            }}
-          >
-            <a href={menu.link} download={menu.name}>
-              {menu.name}
-            </a>
-          </Li>
-        </Ul>
-      ))}
-    </Div>
-  );
-};
-const portalElement = document.getElementById("burger");
+// const OurMenuOverlay = ({ setOurMenu, ourMenu }) => {
+//   return (
+//     <Div>
+//       <CloseIcon
+//         stile={{ color: "white" }}
+//         onClick={() => {
+//           setOurMenu(!ourMenu);
+//         }}
+//       />
+//       {menus.map((menu, i) => (
+//         <Ul>
+//           <Li
+//             key={i}
+//             onClick={() => {
+//               setOurMenu(!ourMenu);
+//             }}
+//           >
+//             <a href={menu.link} download={menu.name}>
+//               {menu.name}
+//             </a>
+//           </Li>
+//         </Ul>
+//       ))}
+//     </Div>
+//   );
+// };
+// const portalElement = document.getElementById("burger");
 
 const OurMenu = ({ setOurMenu, ourMenu }) => {
   return (
@@ -49,10 +49,32 @@ const OurMenu = ({ setOurMenu, ourMenu }) => {
         <Backdrop setOurMenu={setOurMenu} ourMenu={ourMenu} />,
         portalElement
       )} */}
-      {ReactDOM.createPortal(
+      {/* {ReactDOM.createPortal(
         <OurMenuOverlay setOurMenu={setOurMenu} ourMenu={ourMenu} />,
         portalElement
-      )}
+      )} */}
+      <Div>
+        <CloseIcon
+          stile={{ color: "white" }}
+          onClick={() => {
+            setOurMenu(!ourMenu);
+          }}
+        />
+        {menus.map((menu, i) => (
+          <Ul>
+            <Li
+              key={i}
+              onClick={() => {
+                setOurMenu(!ourMenu);
+              }}
+            >
+              <a href={menu.link} download={menu.name}>
+                {menu.name}
+              </a>
+            </Li>
+          </Ul>
+        ))}
+      </Div>
     </>
   );
 };
