@@ -1,62 +1,86 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 
 import { AiOutlineClose } from "react-icons/ai";
 import styled from "styled-components";
 import loading from "./loading.png";
 
-const Backdrop = ({ setBook, book }) => {
-  return (
-    <BackdropDiv
-      onClick={() => {
-        setBook(!book);
-      }}
-    />
-  );
-};
+// const Backdrop = ({ setBook, book }) => {
+//   return (
+//     <BackdropDiv
+//       onClick={() => {
+//         setBook(!book);
+//       }}
+//     />
+//   );
+// };
 
-const BurgerOverlay = ({ setBook, book }) => {
-  return (
-    <Div>
-      <RowDiv>
-        <CloseText
-          onClick={() => {
-            setBook(!book);
-          }}
-        >
-          CLOSE
-        </CloseText>
-        <CloseIcon
-          stile={{ color: "white" }}
-          onClick={() => {
-            setBook(!book);
-          }}
-        />
-      </RowDiv>
-      <IframeDiv>
-        <Iframe
-          title="book"
-          className="iframe"
-          src="https://tableagent.com/iframe/the-orchard-bar-restaurant/v/medium/"
-        ></Iframe>
-      </IframeDiv>
-    </Div>
-  );
-};
+// const BurgerOverlay = ({ setBook, book }) => {
+//   return (
+//     <Div>
+//       <RowDiv>
+//         <CloseText
+//           onClick={() => {
+//             setBook(!book);
+//           }}
+//         >
+//           CLOSE
+//         </CloseText>
+//         <CloseIcon
+//           stile={{ color: "white" }}
+//           onClick={() => {
+//             setBook(!book);
+//           }}
+//         />
+//       </RowDiv>
+//       <IframeDiv>
+//         <Iframe
+//           title="book"
+//           className="iframe"
+//           src="https://tableagent.com/iframe/the-orchard-bar-restaurant/v/medium/"
+//         ></Iframe>
+//       </IframeDiv>
+//     </Div>
+//   );
+// };
 
-const portalElement = document.getElementById("burger");
+// const portalElement = document.getElementById("burger");
 
 const BookATable = ({ setBook, book }) => {
   return (
     <>
-      {ReactDOM.createPortal(
+      {/* {ReactDOM.createPortal(
         <Backdrop setBook={setBook} book={book} />,
         portalElement
       )}
       {ReactDOM.createPortal(
         <BurgerOverlay setBook={setBook} book={book} />,
         portalElement
-      )}
+      )} */}
+      <Div>
+        <RowDiv>
+          <CloseText
+            onClick={() => {
+              setBook(!book);
+            }}
+          >
+            CLOSE
+          </CloseText>
+          <CloseIcon
+            stile={{ color: "white" }}
+            onClick={() => {
+              setBook(!book);
+            }}
+          />
+        </RowDiv>
+        <IframeDiv>
+          <Iframe
+            title="book"
+            className="iframe"
+            src="https://tableagent.com/iframe/the-orchard-bar-restaurant/v/medium/"
+          ></Iframe>
+        </IframeDiv>
+      </Div>
     </>
   );
 };
@@ -109,14 +133,14 @@ const IframeDiv = styled.div`
   }
 `;
 
-const BackdropDiv = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0);
-`;
+// const BackdropDiv = styled.div`
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100vh;
+//   z-index: 1;
+//   background-color: rgba(0, 0, 0, 0);
+// `;
 
 export default BookATable;
