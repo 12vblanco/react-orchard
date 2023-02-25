@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import { AiOutlineClose } from "react-icons/ai";
 import styled from "styled-components";
 import { menus } from "./Menus";
