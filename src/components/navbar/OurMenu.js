@@ -68,6 +68,10 @@ const Div = styled.div`
   padding-bottom: 3rem;
   background: rgba(0, 0, 0, 0.94);
   border-radius: 0 0px 8px 0;
+  @media (max-width: 640px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 const Ul = styled.ul`
   display: flex;

@@ -73,6 +73,10 @@ const Div = styled.div`
   background: rgba(0, 0, 0, 0.94);
   border-radius: 0 0px 8px 0;
   padding-right: 20px;
+  @media (max-width: 640px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const RowDiv = styled.div`
@@ -100,6 +104,9 @@ const CloseText = styled.p`
 
 const IframeDiv = styled.div`
   background: url(${loading}) center center no-repeat;
+  @media (max-width: 640px) {
+    background: url(${loading}) center right no-repeat;
+  }
 `;
 
 const BackdropDiv = styled.div`
