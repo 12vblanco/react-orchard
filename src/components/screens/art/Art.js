@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import prev1 from "../../../components/screens/art/prev1.jpg";
-import art from "../../../images/art/art.jpeg";
 import prev2 from "../../../images/art/current2.jpeg";
+import art from "../../../images/art/new9.jpg";
 import Image from "./Image";
 
 const Art = () => {
