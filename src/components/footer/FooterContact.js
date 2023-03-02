@@ -18,7 +18,7 @@ const FooterContact = () => {
       </ContactText>
       <CopyText>
         <a
-          href="https://victorblanco.co.uk/contact"
+          href="https://victorblanco.co.uk/contactWebDev"
           target="_blank"
           rel="noreferrer"
         >
