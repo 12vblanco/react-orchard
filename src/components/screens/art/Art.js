@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import prev1 from "../../../components/screens/art/prev1.jpg";
 import art from "../../../images/art/art.jpeg";
+import prev2 from "../../../images/art/current2.jpeg";
 import Image from "./Image";
 
 const Art = () => {
@@ -36,9 +37,9 @@ const Art = () => {
       </Header>
       <H1>Current Exhibition:</H1>{" "}
       <H2 style={{ fontSize: "18px" }}>
-        Karen Laird{" "}
+        Manuela Vengoechea{" "}
         <a
-          href="https://www.instagram.com/karenlaird.art/"
+          href="https://www.instagram.com/manuela.vengoechea.art/"
           target="_blank"
           rel="noreferrer"
         >
@@ -47,26 +48,27 @@ const Art = () => {
       </H2>
       <Image />
       <H2 style={{ maxWidth: "1000px", padding: "22px" }}>
-        Karen Laird is a Scottish landscape artist. She grew up in Orkney, is
-        currently living in Edinburgh, and spends her time painting between both
-        places. <br />
-        Karen studied glass at Edinburgh College of Art gaining her BA(hons) in
-        design and applied arts, before studying painting at Leith School of
-        Art, where she was awarded the painting course prize.
+        Whilst heading into my last year at the Glasgow School of Art, this
+        series of Edinburgh lithographs reflects my longing to return to the
+        beautiful city I grew up in, especially the areas local to The Orchard.{" "}
         <br />
-        Her painting has been featured in numerous juried exhibitions, including
-        the Jacksons Painting Prize, and the Lynn Painter-Stainers Prize at the
-        Mall galleries in London.
-        <br /> Beginning with a love of being outside in the landscape, these
-        works were created in response to walks taken around Edinburgh in wooded
-        areas during the Lockdown period. Karen makes paintings that portray
-        what she enjoys about the natural world. Be it the patterns created by a
-        tangle of branches, the glimpse of buildings peeping through between the
-        gaps in the trees, or the sun dappling the leaves rustling in the wind.
-        Working with acrylic, layering up the paint, her pictures are a
-        collection of arks which capture nature in a joyful and colourful way.
+        The scenes that I chose for this space are 'icons' of my own journeys
+        from the city centre to the Water of Leith, from a collection of around
+        230 images of the New Town reduced to just a few. These small-scale
+        tonal images result from a long lithography printing process, which is
+        based on the principle of water and ink repelling each other in order to
+        create the image, and each individual image took four rounds of
+        preparation and ink-mixing to create the desired effect. <br />
+        The physicality of the process itself lends to my current research for
+        painting the principles of Classicism and Romanticism. I'm particularly
+        interested in expressing memory and feeling, the exaltation of
+        experience and the idea of an image containing its own 'being', and my
+        subject matter usually focuses around touch and gesture with ambiguous
+        context or meaning. At this moment in time I continue to work in
+        Glasgow, traveling to Edinburgh for commissions and walks with my dog
+        around my old neighborhood.
         <br />
-        <span style={{ color: "#ed4e4e" }}>Karen Laird </span>{" "}
+        <span style={{ color: "#ed4e4e" }}>Manuela Vengoechea</span>{" "}
       </H2>
       <H1 style={{ marginTop: "6rem" }}>Previous Exhibitions:</H1>
       <PrevDiv>
@@ -87,6 +89,28 @@ const Art = () => {
             resulting prints are a beautiful and unique way to celebrate the
             natural world and the passage of time, and can make a wonderful
             addition to any home or office.
+          </H2>
+        </div>
+      </PrevDiv>
+      <PrevDiv>
+        <PrevImg src={prev2} />
+        <div>
+          <H2>
+            <a
+              href="https://www.instagram.com/karenlaird.art/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Karen Laird
+            </a>{" "}
+          </H2>
+          <H2>
+            Karen Laird is a Scottish landscape artist. She grew up in Orkney,
+            is currently living in Edinburgh, and spends her time painting
+            between both places. Karen studied glass at Edinburgh College of Art
+            gaining her BA(hons) in design and applied arts, before studying
+            painting at Leith School of Art, where she was awarded the painting
+            course prize
           </H2>
         </div>
       </PrevDiv>
