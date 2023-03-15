@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import img0 from "../../../images/home/home0.jpg";
 
-import img1 from "../../../images/home/home1.jpg";
-import img3 from "../../../images/home/home3.jpg";
-import img4 from "../../../images/home/home4.jpg";
-import img5 from "../../../images/home/home5.jpg";
-import img7 from "../../../images/home/home7.jpg";
+import {
+  default as img1,
+  default as img3,
+  default as img4,
+  default as img5,
+  default as img7,
+} from "../../../images/home/home1.jpg";
 
 export default function ImgBg() {
   const [photo, setPhoto] = useState(null);
@@ -57,6 +59,7 @@ const Img = styled.img`
   height: auto;
   min-height: 400px;
   max-height: 600px;
+  object-fit: cover;
 
   @media (max-width: 640px) {
     min-height: 40vw;
