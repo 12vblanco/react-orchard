@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import img0 from "../../../images/home/home0.jpg";
-
 import img1 from "../../../images/home/home1.jpg";
 import img3 from "../../../images/home/home3.jpg";
 import img4 from "../../../images/home/home4.jpg";
