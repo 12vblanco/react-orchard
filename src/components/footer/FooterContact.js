@@ -18,7 +18,7 @@ const FooterContact = () => {
       </ContactText>
       <CopyText>
         <a
-          href="https://victorblanco.co.uk/contactWebDev"
+          href="https://victorblancoweb.com/home#form"
           target="_blank"
           rel="noreferrer"
         >
@@ -61,6 +61,14 @@ const CopyText = styled.div`
 
 const Img = styled.img`
   width: 20rem;
+`;
+
+const Heart = styled.span`
+  position: relative;
+  top: 3px;
+  left: 1px;
+  font-size: 22px;
+  color: red;
 `;
 
 export default FooterContact;
