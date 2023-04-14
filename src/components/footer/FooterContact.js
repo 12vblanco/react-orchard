@@ -63,12 +63,12 @@ const Img = styled.img`
   width: 20rem;
 `;
 
-const Heart = styled.span`
-  position: relative;
-  top: 3px;
-  left: 1px;
-  font-size: 22px;
-  color: red;
-`;
+// const Heart = styled.span`
+//   position: relative;
+//   top: 3px;
+//   left: 1px;
+//   font-size: 22px;
+//   color: red;
+// `;
 
 export default FooterContact;
