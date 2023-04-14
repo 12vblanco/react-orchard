@@ -32,6 +32,7 @@ const Img = styled.img`
   max-width: 340px;
   max-height: 340px;
   border-radius: 8px;
+  object-fit: contain;
   @media (max-width: 668px) {
     width: 90vw;
     height: 90vw;

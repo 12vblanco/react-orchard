@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import prev1 from "../../../components/screens/art/prev1.jpg";
 import prev2 from "../../../images/art/current2.jpeg";
+import prev3 from "../../../images/art/new3.jpg";
 import art from "../../../images/art/new9.jpg";
 import Image from "./Image";
 
@@ -37,9 +38,9 @@ const Art = () => {
       </Header>
       <H1>Current Exhibition:</H1>{" "}
       <H2 style={{ fontSize: "18px" }}>
-        Manuela Vengoechea{" "}
+        Emily Jane Long{" "}
         <a
-          href="https://www.instagram.com/manuela.vengoechea.art/"
+          href="https://www.instagram.com/emilyjanelong_art/?igshid=YmMyMTA2M2Y%3D"
           target="_blank"
           rel="noreferrer"
         >
@@ -48,47 +49,32 @@ const Art = () => {
       </H2>
       <Image />
       <H2 style={{ maxWidth: "1000px", padding: "22px" }}>
-        Whilst heading into my last year at the Glasgow School of Art, this
-        series of Edinburgh lithographs reflects my longing to return to the
-        beautiful city I grew up in, especially the areas local to The Orchard.{" "}
+        Presenting Emily Jane Long in the Orchard! Beautiful originals to
+        brighten up our side room gallery just in time for the sun to come out!
+        Come and have a look (most of the pieces are for sale!) <br />
         <br />
-        The scenes that I chose for this space are 'icons' of my own journeys
-        from the city centre to the Water of Leith, from a collection of around
-        230 images of the New Town reduced to just a few. These small-scale
-        tonal images result from a long lithography printing process, which is
-        based on the principle of water and ink repelling each other in order to
-        create the image, and each individual image took four rounds of
-        preparation and ink-mixing to create the desired effect. <br />
-        The physicality of the process itself lends to my current research for
-        painting the principles of Classicism and Romanticism. I'm particularly
-        interested in expressing memory and feeling, the exaltation of
-        experience and the idea of an image containing its own 'being', and my
-        subject matter usually focuses around touch and gesture with ambiguous
-        context or meaning. At this moment in time I continue to work in
-        Glasgow, traveling to Edinburgh for commissions and walks with my dog
-        around my old neighborhood.
-        <br />
-        <span style={{ color: "#ed4e4e" }}>Manuela Vengoechea</span>{" "}
+        <span style={{ color: "#ed4e4e" }}>Emily Jane Long</span>{" "}
       </H2>
+      {/* Previous Ex */}
       <H1 style={{ marginTop: "6rem" }}>Previous Exhibitions:</H1>
+      {/* Exhibition */}
       <PrevDiv>
-        <PrevImg src={prev1} />
+        <PrevImg src={prev3} />
         <div>
           <H2>
             <a
-              href="https://victorblanco.co.uk"
+              href="https://www.instagram.com/manuela.vengoechea.art/"
               target="_blank"
               rel="noreferrer"
             >
-              Victor Blanco
+              Manuela Vengoechea{" "}
             </a>{" "}
           </H2>
           <H2>
-            Handmade printing of tree rings; The rings, which are formed as the
-            tree grows over time, provide a detailed and intricate pattern. The
-            resulting prints are a beautiful and unique way to celebrate the
-            natural world and the passage of time, and can make a wonderful
-            addition to any home or office.
+            Whilst heading into my last year at the Glasgow School of Art, this
+            series of Edinburgh lithographs reflects my longing to return to the
+            beautiful city I grew up in, especially the areas local to The
+            Orchard.
           </H2>
         </div>
       </PrevDiv>
@@ -111,6 +97,28 @@ const Art = () => {
             gaining her BA(hons) in design and applied arts, before studying
             painting at Leith School of Art, where she was awarded the painting
             course prize
+          </H2>
+        </div>
+      </PrevDiv>
+      {/* Exhibition */}
+      <PrevDiv>
+        <PrevImg src={prev1} />
+        <div>
+          <H2>
+            <a
+              href="https://victorblanco.co.uk"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Victor Blanco
+            </a>{" "}
+          </H2>
+          <H2>
+            Handmade printing of tree rings; The rings, which are formed as the
+            tree grows over time, provide a detailed and intricate pattern. The
+            resulting prints are a beautiful and unique way to celebrate the
+            natural world and the passage of time, and can make a wonderful
+            addition to any home or office.
           </H2>
         </div>
       </PrevDiv>
