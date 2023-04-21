@@ -49,9 +49,23 @@ const Art = () => {
       </H2>
       <Image />
       <H2 style={{ maxWidth: "1000px", padding: "22px" }}>
-        Presenting Emily Jane Long in the Orchard! Beautiful originals to
-        brighten up our side room gallery just in time for the sun to come out!
-        Come and have a look (most of the pieces are for sale!) <br />
+        Botanical Collection Emily Jane Long.
+        <br />
+        <br /> Emily Jane Long is a South African painter born in Cape Town in
+        1991. Currently based in Edinburgh, her most recent collection of
+        artworks features mainly contemporary botanical studies and floral still
+        lifes. She works primarily in gouache and is particularly drawn to this
+        medium because it allows her to work in both bold, flat color and
+        intricate detail. Her inspirations include artist Pierre-Joseph Redouté,
+        as well as Dutch still life paintings from the 1600s, which share her
+        love of vibrant colors, fine details, and interesting compositions.
+        Living near the Royal Botanic Gardens of Edinburgh has greatly
+        influenced her work, as she finds nature to be an endless source of
+        inspiration. <br />
+        <br />
+        @emilyjanelong_art <br />
+        emilylongartist@gmail.com <br />
+        <a href="www.emilyjanelong.com">www.emilyjanelong.com</a> <br />
         <br />
         <span style={{ color: "#ed4e4e" }}>Emily Jane Long</span>{" "}
       </H2>
