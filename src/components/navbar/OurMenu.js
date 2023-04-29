@@ -105,7 +105,7 @@ const Ul = styled.ul`
 const Li = styled.li`
   font-size: 20px;
   font-weight: 700;
-  margin: 1.4rem;
+  margin: 1.1rem;
 `;
 
 const CloseIcon = styled(AiOutlineClose)`
