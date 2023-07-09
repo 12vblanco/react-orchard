@@ -4,6 +4,7 @@ import prev1 from "../../../components/screens/art/prev1.jpg";
 import prev2 from "../../../images/art/current2.jpeg";
 import prev3 from "../../../images/art/new3.jpg";
 import art from "../../../images/art/new9.jpg";
+import { default as prev4 } from "../../../images/art/unn2.png";
 import Image from "./Image";
 
 const Art = () => {
@@ -38,40 +39,55 @@ const Art = () => {
       </Header>
       <H1>Current Exhibition:</H1>{" "}
       <H2 style={{ fontSize: "18px" }}>
-        Emily Jane Long{" "}
-        <a
-          href="https://www.instagram.com/emilyjanelong_art/?igshid=YmMyMTA2M2Y%3D"
-          target="_blank"
-          rel="noreferrer"
-        >
-          (link to Instagram)
+        Pamela McMahon{" "}
+        <a href="Www.pamelamcmahonart.com" target="_blank" rel="noreferrer">
+          (link to Website)
         </a>
       </H2>
       <Image />
       <H2 style={{ maxWidth: "1000px", padding: "22px" }}>
-        Botanical Collection Emily Jane Long.
+        Pamela McMahon
         <br />
-        <br /> Emily Jane Long is a South African painter born in Cape Town in
-        1991. Currently based in Edinburgh, her most recent collection of
-        artworks features mainly contemporary botanical studies and floral still
-        lifes. She works primarily in gouache and is particularly drawn to this
-        medium because it allows her to work in both bold, flat color and
-        intricate detail. Her inspirations include artist Pierre-Joseph Redouté,
-        as well as Dutch still life paintings from the 1600s, which share her
-        love of vibrant colors, fine details, and interesting compositions.
-        Living near the Royal Botanic Gardens of Edinburgh has greatly
-        influenced her work, as she finds nature to be an endless source of
-        inspiration. <br />
+        <br /> Pamela McMahon- is an Edinburgh based artist who specialises in
+        mixed media, semi abstract collage landscapes. Her works are exuberant
+        and full of texture and movement and often feature golden accents. Her
+        use of pattern and collage invite close inspection to fully appreciate
+        the detail and textures involved. Pamela exhibits her work on a regular
+        basis and has her work in private collections across the UK as well as
+        in Brussels, Los Angeles, New York and New Zealand. <br />
         <br />
-        @emilyjanelong_art <br />
-        emilylongartist@gmail.com <br />
-        <a href="www.emilyjanelong.com">www.emilyjanelong.com</a> <br />
         <br />
-        <span style={{ color: "#ed4e4e" }}>Emily Jane Long</span>{" "}
+        <a href="https://www.facebook.com/pamelamcmahonart">
+          Facebook/PamelaMcMahon
+        </a>{" "}
+        <br />
+        <a href="www.pamelamcmahonart.com">www.pamelamcmahonart.com</a> <br />
+        <br />
+        <span style={{ color: "#ed4e4e" }}>Pamela McMahon</span>{" "}
       </H2>
       {/* Previous Ex */}
       <H1 style={{ marginTop: "6rem" }}>Previous Exhibitions:</H1>
       {/* Exhibition */}
+      <PrevDiv>
+        <PrevImg src={prev4} />
+        <div>
+          <H2>
+            <a
+              href="https://www.instagram.com/manuela.vengoechea.art/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Emily Jane Long.{" "}
+            </a>{" "}
+          </H2>
+          <H2>
+            Emily Jane Long is a South African painter born in Cape Town in
+            1991. Currently based in Edinburgh, her most recent collection of
+            artworks features mainly contemporary botanical studies and floral
+            still lifes.
+          </H2>
+        </div>
+      </PrevDiv>
       <PrevDiv>
         <PrevImg src={prev3} />
         <div>
