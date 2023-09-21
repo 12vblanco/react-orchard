@@ -1,4 +1,5 @@
 import React from "react";
+import { FaHeart } from "react-icons/fa";
 import styled from "styled-components";
 import logo from "../../images/logo_wht.png";
 
@@ -22,7 +23,11 @@ const FooterContact = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Website Victor Blanco 2019 -{new Date().getFullYear()} &copy;
+          Website Victor Blanco{" "}
+          <Heart>
+            <FaHeart />
+          </Heart>{" "}
+          2019 - {new Date().getFullYear()} &copy;
           <span>&nbsp;&nbsp;</span>
         </a>
       </CopyText>
@@ -63,12 +68,12 @@ const Img = styled.img`
   width: 20rem;
 `;
 
-// const Heart = styled.span`
-//   position: relative;
-//   top: 3px;
-//   left: 1px;
-//   font-size: 22px;
-//   color: red;
-// `;
+const Heart = styled.span`
+  position: relative;
+  top: 3px;
+  left: 1px;
+  font-size: 12px;
+  color: red;
+`;
 
 export default FooterContact;

@@ -5,6 +5,7 @@ import prev2 from "../../../images/art/current2.jpeg";
 import prev3 from "../../../images/art/new3.jpg";
 import art from "../../../images/art/new9.jpg";
 import { default as prev4 } from "../../../images/art/unn2.png";
+import prev5 from "../../../images/art/unn3.png";
 import Image from "./Image";
 
 const Art = () => {
@@ -38,36 +39,46 @@ const Art = () => {
         </TextDiv>
       </Header>
       <H1>Current Exhibition:</H1>{" "}
-      <H2 style={{ fontSize: "18px" }}>
-        Pamela McMahon{" "}
-        <a href="Www.pamelamcmahonart.com" target="_blank" rel="noreferrer">
-          (link to Website)
-        </a>
-      </H2>
-      <Image />
       <H2 style={{ maxWidth: "1000px", padding: "22px" }}>
-        Pamela McMahon
+        Dovilė Petkevičiūtė
         <br />
-        <br /> Pamela McMahon- is an Edinburgh based artist who specialises in
-        mixed media, semi abstract collage landscapes. Her works are exuberant
-        and full of texture and movement and often feature golden accents. Her
-        use of pattern and collage invite close inspection to fully appreciate
-        the detail and textures involved. Pamela exhibits her work on a regular
-        basis and has her work in private collections across the UK as well as
-        in Brussels, Los Angeles, New York and New Zealand. <br />
+        <br /> Dovilė Petkevičiūtė is a Lithuanian born artist, who has been
+        residing in Edinburgh, Scotland for last decade. Her painting journey
+        started 2 years ago, after tragedy struck her life and art became a way
+        of healing. Ethereal landscapes inspired by small moments in nature are
+        her forte. She patiently observes nature unfolding and then translates
+        her feelings onto canvas, leaving viewers feeling a sense of
+        tranquillity. Instagram handle @unumsolumart <br />
         <br />
         <br />
-        <a href="https://www.facebook.com/pamelamcmahonart">
-          Facebook/PamelaMcMahon
+        <a href="https://www.instagram.com/unumsolumart">
+          Instagram: @unumsolumart
         </a>{" "}
         <br />
-        <a href="www.pamelamcmahonart.com">www.pamelamcmahonart.com</a> <br />
         <br />
-        <span style={{ color: "#ed4e4e" }}>Pamela McMahon</span>{" "}
-      </H2>
+        <span style={{ color: "#ed4e4e" }}>Dovilė Petkevičiūtė</span>
+      </H2>{" "}
+      <Image />
       {/* Previous Ex */}
-      <H1 style={{ marginTop: "6rem" }}>Previous Exhibitions:</H1>
+      <H1 style={{ marginTop: "12rem" }}>Previous Exhibitions:</H1>
       {/* Exhibition */}
+      <PrevDiv>
+        <PrevImg src={prev5} />
+        <div>
+          <H2>
+            <a href="https://www.facebook.com/pamelamcmahonart">
+              Pamela McMahon
+            </a>{" "}
+          </H2>
+          <H2>
+            Pamela McMahon, an Edinburgh based artist who specialises in mixed
+            media, semi abstract collage landscapes. Her works are exuberant and
+            full of texture and movement and often feature golden accents. Her
+            use of pattern and collage invite close inspection to fully
+            appreciate the detail and textures involved.
+          </H2>
+        </div>
+      </PrevDiv>
       <PrevDiv>
         <PrevImg src={prev4} />
         <div>
