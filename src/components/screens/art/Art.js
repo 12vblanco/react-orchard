@@ -51,7 +51,11 @@ const Art = () => {
         tranquillity. Instagram handle @unumsolumart <br />
         <br />
         <br />
-        <a href="https://www.instagram.com/unumsolumart">
+        <a
+          href="https://www.instagram.com/unumsolumart"
+          target="_blank"
+          rel="noreferrer"
+        >
           Instagram: @unumsolumart
         </a>{" "}
         <br />
