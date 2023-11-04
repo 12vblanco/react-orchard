@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 import light from "../../images/light.jpg";
 import FooterContact from "./FooterContact";
 import FooterOpening from "./FooterOpening";
@@ -13,12 +13,18 @@ const Footer = () => {
         backgroundImage: `url(${light})`,
         backgroundSize: "cover",
         backgroundPosition: "bottom",
+        display: "flex",
+        flexDirection: "column",
+        background: "rgba(0, 0, 0, 0.9)",
       }}
     >
       <Div>
         <FooterSocial />
         <FooterOpening id="#opening" />
         <FooterContact />
+        <Link to="/terms">
+          <Terms>Terms & Conditions</Terms>
+        </Link>{" "}
       </Div>
       <Link to="/terms">
         <Terms>Terms & Conditions</Terms>
@@ -35,7 +41,7 @@ const Div = styled.div`
   padding: 6rem 2rem 2rem 2rem;
   width: 100%;
   height: auto;
-  background: rgba(0, 0, 0, 0.9);
+  /* background: rgba(0, 0, 0, 0.9); */
   @media (max-width: 700px) {
     flex-direction: column;
     justify-content: center;
