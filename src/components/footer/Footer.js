@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import light from "../../images/light.jpg";
 import FooterContact from "./FooterContact";
 import FooterOpening from "./FooterOpening";
@@ -19,6 +20,9 @@ const Footer = () => {
         <FooterOpening id="#opening" />
         <FooterContact />
       </Div>
+      <Link to="/terms">
+        <Terms>Terms & Conditions</Terms>
+      </Link>{" "}
     </div>
   );
 };
@@ -38,6 +42,15 @@ const Div = styled.div`
     align-items: center;
     padding: 2rem;
   }
+`;
+
+const Terms = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-left: 4px;
+  color: var(--gold);
 `;
 
 export default Footer;
