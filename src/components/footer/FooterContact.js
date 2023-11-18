@@ -1,5 +1,6 @@
 import React from "react";
 import { FaHeart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../../images/logo_wht.png";
 
@@ -31,6 +32,9 @@ const FooterContact = () => {
           <span>&nbsp;&nbsp;</span>
         </a>
       </CopyText>
+      <Link to="/terms">
+        <Terms>Terms & Conditions</Terms>
+      </Link>{" "}
     </Div>
   );
 };
@@ -45,7 +49,7 @@ const Div = styled.div`
 const DivRow = styled.div`
   display: flex;
   font-size: 32px;
-  padding: 2rem 1rem;
+  padding-bottom: 1rem;
 `;
 
 const ContactText = styled.div`
@@ -74,6 +78,16 @@ const Heart = styled.span`
   left: 1px;
   font-size: 12px;
   color: red;
+`;
+
+const Terms = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-left: 4px;
+  color: var(--gold);
+  padding-top: 1rem;
 `;
 
 export default FooterContact;

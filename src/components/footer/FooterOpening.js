@@ -21,9 +21,10 @@ const Div = styled.div`
   flex-direction: column;
   width: 30rem;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
+  padding-top: 2rem;
   @media (max-width: 920px) {
-    font-size: 16px;
+    font-size: 15px;
   }
   @media (max-width: 700px) {
     margin-bottom: 2rem;
@@ -36,7 +37,7 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
-  margin: 5px;
+  margin: 0.25rem;
 `;
 
 export default FooterOpening;
