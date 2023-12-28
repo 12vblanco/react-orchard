@@ -38,8 +38,9 @@ function App() {
         }}
       >
         {" "}
-        I use cookies in my website. By clicking “Accept”, you consent to the
-        use of these the cookies. To learn more about how we use cookies and
+        We use cookies in our website like most websites do. nothing sinister,
+        just to offer a better experience. By clicking “Accept”, you consent to
+        the use of these the cookies. To learn more about how we use cookies and
         your rights, please read our
         <Span>
           <a href="/terms"> Terms of Service</a>
