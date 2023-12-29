@@ -38,12 +38,18 @@ function App() {
         }}
       >
         {" "}
-        We use cookies in our website like most websites do. nothing sinister,
-        just to offer a better experience. By clicking “Accept”, you consent to
-        the use of these the cookies. To learn more about how we use cookies and
-        your rights, please read our
+        We use cookies in our website like most websites do. Nothing sinister,
+        just to offer a better experience and keep track of usage. By clicking
+        “Accept”, you consent to the use of these the cookies. To learn more
+        please read our
         <Span>
-          <a href="/terms"> Terms of Service</a>
+          <a
+            style={{ textDecoration: "none", color: "rgb(237, 78, 78)" }}
+            href="/terms"
+          >
+            {" "}
+            Terms of Service
+          </a>
         </Span>
         .
       </CookieConsent>{" "}
