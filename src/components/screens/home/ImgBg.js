@@ -19,7 +19,7 @@ export default function ImgBg() {
       // increment the photo index, or set it back to 1 if it reaches the end
       const newPhoto = photo === 5 ? 1 : photo + 1;
       setPhoto(newPhoto);
-    }, 19000); // interval duration in milliseconds
+    }, 32000); // interval duration in milliseconds
 
     return () => {
       clearInterval(interval);
