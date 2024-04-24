@@ -54,8 +54,8 @@ const Img = styled.img`
   width: 100vw;
   min-width: 640px;
   height: auto;
-  min-height: 400px;
-  max-height: 600px;
+  /* min-height: 400px; */
+  max-height: 400px;
   object-fit: cover;
 
   @media (max-width: 640px) {
