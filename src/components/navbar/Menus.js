@@ -1,6 +1,7 @@
 export const menus = [
-  { link: "./menu/food.pdf", name: "Food menu" },
-  { link: "./menu/kids.pdf", name: "Kids menu" },
+  { link: "./menu/food.pdf", name: "Food Menu" },
+  { link: "./menu/roast.pdf", name: "Sunday Roasts" },
+  { link: "./menu/kids.pdf", name: "Kids Menu" },
   { link: "./menu/gluten.pdf", name: "Gluten free" },
   { link: "./menu/wine.pdf", name: "Wines" },
   { link: "./menu/beer.pdf", name: "Beers" },
