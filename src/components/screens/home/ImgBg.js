@@ -45,7 +45,16 @@ export default function ImgBg() {
 
   return (
     <div>
-      <Img src={returnPhotoURL()} style={{}} />
+      <Img src={returnPhotoURL()} />
+      <Div>
+        <a
+          href="/menu/children.pdf" // Ensure this path is correct
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Find out about our Children and Dogs Policies
+        </a>
+      </Div>
     </div>
   );
 }
@@ -64,4 +73,15 @@ const Img = styled.img`
     min-width: auto;
     max-width: auto;
   }
+`;
+
+const Div = styled.div`
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px 3.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.6rem 0rem;
 `;
