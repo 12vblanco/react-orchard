@@ -47,11 +47,7 @@ export default function ImgBg() {
     <div>
       <Img src={returnPhotoURL()} />
       <Div>
-        <a
-          href="/menu/children.pdf" // Ensure this path is correct
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/menu/children.pdf" target="_blank" rel="noopener noreferrer">
           Find out about our Children and Dogs Policies
         </a>
       </Div>
